@@ -1,1 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1em;
+}
+p{
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+
+}
+.button{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    background-color: #DD0000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.button .fa-square-caret-right{
+    margin-left: 10px;;
+}
+.container{
+    max-width: 1322px;
+    margin: auto;
+}
+footer{
+    background-color: #161616;
+    padding: 60px 0;
+    text-align: center;
+}
+footer img{
+    width: 300px;
+}
+.flex-box{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hero-section{
+    background-color: #161616;
+    border-radius: 30px;
+    color: #ffffff;
+    padding: 0px 50px 0px 50px;
+}
+.hero-content{
+    width: 45%;
+}
+.hero-section p{
+    padding: 20px 0;
+}
+.hero-image{
+    padding-top: 30px;
+    margin-bottom: -4px;
+}
+.footer-content{
+    max-width: 1322px;
+    margin: auto;
+}
+hr{
+    color: #ffffff;
+    opacity: 0.2;
+    margin-top: 30px;
+}
+footer .flex-box{
+    justify-content: center;
+    gap: 40px;
+    padding-top: 40px;
+}
+footer a{
+    color: #B9B9B9;
+}
+.footer-social-icons{
+    font-size: 25px;
+    margin-top: 30px;
+}
+@media screen and (max-width: 688px) {
+    .container{
+        max-width: 96%;
+        margin: auto;
+    }
+    h1{
+       font-size: 45px;
+    }
+    .flex-box{
+        flex-direction: column;
+        align-content: flex-end;
+    }
+    .hero-section{
+        padding: 30px 8px 0px 8px;
+    }
+    .hero-content{
+        width: 100%;
+    }
+    .hero-image img{
+        width: 100%;
+    }
+    .hero-section{
+        text-align: center;
+    }
+    .footer-social-icons{
+        display:flex;
+        gap: 30px;
+        justify-content: center;
+    }
+}
