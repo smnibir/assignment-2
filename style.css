@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap');
 
 body{
-    margin: 0px;
+    margin: 0;
     padding: 0px;
+}
+section{
+    margin: 30px 0;
 }
 h1{
     font-family: 'Roboto Slab', serif;
@@ -114,5 +117,36 @@ footer a{
         display:flex;
         gap: 30px;
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 689px) and (max-width: 1199px) {
+    .hero-section{
+        padding: 0 10px;
+    }
+    .hero-content{
+        width: 100%;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .container , .footer-content{
+        max-width: 97%;
+        margin: auto;
+    }
+    footer .flex-box{
+        flex-wrap: wrap;
+        max-width: 600px;
+        margin: auto;
+    }
+    .hero-content{
+        width: 60%;
+    }
+    .hero-image img{
+        width: 100%;
+        max-width: 400px;
+    }
+    .footer-content{
+
     }
 }
