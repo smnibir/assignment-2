@@ -1,3 +1,4 @@
+/* Global CSS */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap');
 
 body{
@@ -35,11 +36,13 @@ a{
     color: white;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
-    background-color: #DD0000;
+    background-color: #5D10E2;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
 }
+/* global css end */
+/* Hero section */
 .button .fa-square-caret-right{
     margin-left: 10px;;
 }
@@ -76,6 +79,20 @@ footer img{
     padding-top: 30px;
     margin-bottom: -4px;
 }
+.button .fa-solid{
+    transform: scale(120%);
+    animation: scale 1.5s infinite;
+    animation-direction: alternate;
+}
+@keyframes scale{
+    0% {
+      transform: scale(80%);
+    }
+    100% {
+      transform: scale(120%);
+    }
+  }
+/* Footer */
 .footer-content{
     max-width: 1322px;
     margin: auto;
@@ -97,12 +114,14 @@ footer a{
     font-size: 25px;
     margin-top: 30px;
 }
+/* blog section */
 .blog-section{
     display: flex;
     gap: 30px;
+    padding: 40px 0px;
 }
 .buttons{
-    width: 312px;
+    min-width: 300px;
     background-color: #161616;
     border-radius: 10px;
     display: flex;
@@ -110,20 +129,26 @@ footer a{
     text-align: center;
     padding: 30px;
     gap: 30px;
+    height: 232px;
 }
 .buttons a{
     background-color: #ffffff;
     color:#161616;
     font-weight: 700;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 .buttons a.active{
-    background-color: #DD0000;
+    background-color: #5D10E2;
     color: #ffffff;
 }
 .blog-card{
     border: 1px solid #E8E8E8;
     border-radius: 10px;
+    width: 100%;
+    grid-template-columns:100%;
+}
+.blog-image img{
+    width: 100%;
 }
 .blog-details{
     padding: 15px;
@@ -132,25 +157,57 @@ footer a{
     font-size: 16px;
     font-weight: 600;
     padding: 2px 15px;
-    border: 1px solid #161616;
+    border: 1px solid #5D10E2;
     border-radius: 5px;
+    color:#5D10E2;
 }
 .blog-info{
     display: flex;
-    gap: 30px;
+    gap: 40px;
+    font-family: 'Nunito', sans-serif;
 }
 .blog{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    width: 100%;
 }
+.ajax-button{
+    display: none;
+}
+.blog-card .fa-solid{
+    color: #5D10E2;
+}
+/* Upcoming match */
+.flag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flag span{
+    font-weight: 700;
+    padding: 0 15px;
+    font-family: 'Nunito', sans-serif;
+}
+.schedule-card{
+    text-align: center;
+    padding: 40px 0px;
+    /* width: 289px; */
+    grid-template-columns:100%;
+}
+.schedule-card p{
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+}
+/* responsive mobile device */
 @media screen and (max-width: 688px) {
     .container{
-        max-width: 96%;
+        max-width: 95%;
         margin: auto;
     }
     h1{
-       font-size: 45px;
+       font-size: 37px;
     }
     .flex-box{
         flex-direction: column;
@@ -173,8 +230,43 @@ footer a{
         gap: 30px;
         justify-content: center;
     }
+    .blog-section{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .buttons{
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        padding: 0px;
+        gap: 20px;
+        min-width: 100%;
+    }
+    .buttons a{
+        border: 1px solid #E8E8E8;
+        border-radius: 10px;
+    }
+    .blog{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        justify-content: center;
+        justify-items: center;
+    }
+    footer .flex-box{
+        gap: 20px;
+    }
+    footer img{
+        width: 100%;
+    }
+    .schedule-card{
+        text-align: center;
+        padding: 40px 0px;
+        width: 100%;
+        grid-template-columns:100%;
+    }
 }
-
+/* Responsive Tablet */
 @media screen and (min-width: 689px) and (max-width: 1199px) {
     .hero-section{
         padding: 0 10px;
@@ -201,7 +293,41 @@ footer a{
         width: 100%;
         max-width: 400px;
     }
-    .footer-content{
-
+    .buttons {
+        width: auto;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        padding: 0px;
+        gap: 30px;
+        height: auto;
+    }
+    .blog-section{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .blog{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-content: center;
+        justify-items: center
+    }
+    .buttons a{
+        width: 100%;
+        border: 1px solid #E8E8E8;
+    }
+    .ajax-button{
+        display: block;
+        width: auto;
+        margin: auto;
+        text-align: center;
+        margin: 30px 0;
+    }
+    .schedule-card{
+        text-align: center;
+        padding: 40px 0px;
+        width: 100%;
     }
 }
