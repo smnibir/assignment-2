@@ -3,6 +3,7 @@
 body{
     margin: 0;
     padding: 0px;
+    color:#161616;
 }
 section{
     margin: 30px 0;
@@ -12,6 +13,13 @@ h1{
     font-size: 70px;
     font-weight: 700;
     margin: 0;
+    line-height: 1em;
+}
+h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0;
     line-height: 1em;
 }
 p{
@@ -26,7 +34,7 @@ a{
 .button{
     color: white;
     font-family: 'Nunito', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     background-color: #DD0000;
     text-decoration: none;
     padding: 10px 20px;
@@ -88,6 +96,53 @@ footer a{
 .footer-social-icons{
     font-size: 25px;
     margin-top: 30px;
+}
+.blog-section{
+    display: flex;
+    gap: 30px;
+}
+.buttons{
+    width: 312px;
+    background-color: #161616;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 30px;
+}
+.buttons a{
+    background-color: #ffffff;
+    color:#161616;
+    font-weight: 700;
+    padding: 20px 0;
+}
+.buttons a.active{
+    background-color: #DD0000;
+    color: #ffffff;
+}
+.blog-card{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+.blog-details{
+    padding: 15px;
+}
+.blog-category{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 2px 15px;
+    border: 1px solid #161616;
+    border-radius: 5px;
+}
+.blog-info{
+    display: flex;
+    gap: 30px;
+}
+.blog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 @media screen and (max-width: 688px) {
     .container{
